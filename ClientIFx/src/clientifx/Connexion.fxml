@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="717.0" prefWidth="1366.0" style="-fx-background-image: ..\img\architecture-4012400_1920.jpg;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientifx.ConnexionController">
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="717.0" prefWidth="1368.0">
+               <children>
+                  <AnchorPane prefHeight="717.0" prefWidth="1366.0">
+                     <children>
+                        <ImageView fitHeight="738.0" fitWidth="1366.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/bg.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="597.0" layoutY="237.0" text="Connexion" textFill="#ea2a6c">
+                           <font>
+                              <Font name="Century Gothic" size="34.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="login" focusColor="#ea2a6c" layoutX="547.0" layoutY="359.0" prefHeight="25.0" prefWidth="289.0" promptText="Login" unFocusColor="#abaaaa" />
+                        <JFXPasswordField fx:id="password" focusColor="#ea2a6c" layoutX="545.0" layoutY="426.0" prefHeight="25.0" prefWidth="291.0" promptText="Password" unFocusColor="#abaaaa" />
+                        <AnchorPane layoutX="651.0" layoutY="170.0" prefHeight="53.0" prefWidth="64.0">
+                           <effect>
+                              <DropShadow color="#1e1e1e" height="10.3" radius="2.075" spread="0.02" width="0.0" />
+                           </effect>
+                           <children>
+                              <ImageView fitHeight="46.0" fitWidth="42.0" layoutX="12.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/icons8_Slack_48px.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Label layoutX="571.0" layoutY="287.0" text="Veuillez entrer votre login et le mot de passe" textFill="#686666" />
+                        <JFXButton layoutX="632.0" layoutY="507.0" onAction="#goConnexion" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: #EA2A6C;" text="OK" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gn.lab.GNCalendarTile?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="1366.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientifx.accueil.AccueilController">
+   <left>
+      <HBox prefHeight="717.0" prefWidth="222.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="box1" prefHeight="626.0" prefWidth="47.0" style="-fx-background-color: #FBFCFC;">
+               <children>
+                  <AnchorPane prefHeight="52.0" prefWidth="51.0">
+                     <children>
+                        <ImageView fitHeight="31.0" fitWidth="27.0" layoutX="13.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/icons8_Slack_48px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="52.0" prefWidth="57.0">
+                     <children>
+                        <JFXButton ellipsisString="" layoutX="2.0" layoutY="4.0" onAction="#goMenu" prefHeight="47.0" prefWidth="42.0" ripplerFill="#ea2a6c">
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/icons8_Bulleted_List_64px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="52.0" prefWidth="43.0">
+                     <children>
+                        <JFXButton ellipsisString="" layoutX="2.0" layoutY="4.0" onAction="#goAccueil" prefHeight="47.0" prefWidth="45.0">
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/icons8_Real_Estate_50px_3.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="52.0" prefWidth="43.0">
+                     <children>
+                        <JFXButton ellipsisString="" layoutX="2.0" layoutY="4.0" onAction="#goMessage" prefHeight="47.0" prefWidth="45.0" ripplerFill="#ea2a6c">
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/icons8_Chat_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="52.0" prefWidth="43.0">
+                     <children>
+                        <JFXButton ellipsisString="" layoutX="2.0" layoutY="4.0" onAction="#goEmploi" prefHeight="47.0" prefWidth="45.0" ripplerFill="#ea2a6c">
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/icons8_Calendar_Minus_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="52.0" prefWidth="43.0">
+                     <children>
+                        <JFXButton ellipsisString="" layoutX="2.0" layoutY="4.0" onAction="#goStatistic" prefHeight="47.0" prefWidth="45.0" ripplerFill="#ea2a6c">
+                           <graphic>
+                              <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/icons8_Combo_Chart_50px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <VBox alignment="BOTTOM_RIGHT">
+                     <children>
+                        <AnchorPane prefHeight="52.0" prefWidth="43.0">
+                           <children>
+                              <JFXButton ellipsisString="" layoutX="2.0" layoutY="5.0" onAction="#goNotification" prefHeight="46.0" prefWidth="49.0" ripplerFill="#ea2a6c">
+                                 <graphic>
+                                    <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../img/icons8_Notification_50px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="52.0" prefWidth="43.0">
+                           <children>
+                              <JFXButton ellipsisString="" layoutX="2.0" layoutY="5.0" onAction="#goParametre" prefHeight="46.0" prefWidth="49.0" ripplerFill="#ea2a6c">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../img/icons8_Settings_50px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="52.0" prefWidth="43.0">
+                           <children>
+                              <JFXButton ellipsisString="" layoutX="2.0" layoutY="5.0" onAction="#goProfile" prefHeight="46.0" prefWidth="49.0" ripplerFill="#ea2a6c">
+                                 <graphic>
+                                    <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../img/icons8_Male_User_50px_1.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="245.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="717.0" prefWidth="179.0" style="-fx-background-color: #f4f7f6;">
+               <children>
+                  <AnchorPane prefHeight="53.0" prefWidth="170.0" style="-fx-background-color: #EA2A6C;">
+                     <children>
+                        <Label layoutX="23.0" layoutY="12.0" prefHeight="30.0" prefWidth="131.0" text="G.Immobilière" textFill="#f5f5f5">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="43.0" prefWidth="179.0">
+                     <children>
+                        <Label layoutX="57.0" layoutY="7.0" prefHeight="30.0" prefWidth="57.0" text="Menu">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="34.0" prefWidth="167.0">
+                     <children>
+                        <JFXButton layoutX="1.0" layoutY="2.0" onAction="#goMaison" prefHeight="31.0" prefWidth="179.0" ripplerFill="#ea2a6c" text="Maison" textFill="#5a5a5a">
+                           <graphic>
+                              <FontAwesomeIconView fill="#5a5a5a" glyphName="HOME" size="14" />
+                           </graphic>
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="34.0" prefWidth="167.0">
+                     <children>
+                        <JFXButton layoutX="1.0" layoutY="2.0" onAction="#goLocataire" prefHeight="31.0" prefWidth="179.0" ripplerFill="#ea2a6c" text="Client" textFill="#5a5a5a">
+                           <graphic>
+                              <FontAwesomeIconView fill="#5a5a5a" glyphName="USER" size="14" />
+                           </graphic>
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="34.0" prefWidth="167.0">
+                     <children>
+                        <JFXButton layoutX="1.0" layoutY="2.0" onAction="#goLoyer" prefHeight="31.0" prefWidth="179.0" ripplerFill="#ea2a6c" text="Loyer" textFill="#5a5a5a">
+                           <graphic>
+                              <FontAwesomeIconView fill="#5a5a5a" glyphName="MONEY" size="14" />
+                           </graphic>
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="34.0" prefWidth="167.0">
+                     <children>
+                        <JFXButton layoutX="1.0" layoutY="2.0" onAction="#goFacture" prefHeight="31.0" prefWidth="179.0" ripplerFill="#ea2a6c" text="Facture" textFill="#5a5a5a">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="TASKS" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="34.0" prefWidth="167.0">
+                     <children>
+                        <JFXButton layoutX="1.0" layoutY="2.0" onAction="#goBayeur" prefHeight="31.0" prefWidth="179.0" ripplerFill="#ea2a6c" text="Proprietaire" textFill="#5a5a5a">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="LIST" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="34.0" prefWidth="167.0">
+                     <children>
+                        <JFXButton layoutX="1.0" layoutY="2.0" onAction="#goContrat" prefHeight="31.0" prefWidth="179.0" ripplerFill="#ea2a6c" text="Contrat" textFill="#5a5a5a">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="BOOK" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <JFXButton onAction="#goEtat" prefHeight="31.0" prefWidth="179.0" ripplerFill="#ea2a6c" text="Etat de paiement" textFill="#5a5a5a">
+                     <font>
+                        <Font name="Century Gothic" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView />
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow color="#9493934f" height="12.08" offsetX="3.0" offsetY="0.5" radius="5.545" width="12.1" />
+               </effect>
+            </VBox>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <VBox prefHeight="717.0" prefWidth="1114.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="53.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane prefHeight="53.0" prefWidth="317.0">
+                     <HBox.margin>
+                        <Insets left="800.0" />
+                     </HBox.margin>
+                     <children>
+                        <AnchorPane layoutY="4.0" prefHeight="46.0" prefWidth="187.0">
+                           <children>
+                              <JFXTextField fx:id="search" focusColor="#8a8a8d" layoutY="11.0" prefHeight="25.0" prefWidth="184.0" promptText="Recherche" unFocusColor="#ea2a6c">
+                                 <font>
+                                    <Font name="Century Gothic" size="12.0" />
+                                 </font>
+                              </JFXTextField>
+                           </children>
+                        </AnchorPane>
+                        <JFXButton fx:id="btnSearch" ellipsisString="" layoutX="187.0" layoutY="12.0" onAction="#goSearch" prefHeight="28.0" prefWidth="25.0" ripplerFill="WHITE" style="-fx-background-color: #ea2a6c;">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXToggleButton ellipsisString="" layoutX="231.0" layoutY="-1.0" onAction="#goExit" prefHeight="58.0" prefWidth="72.0" text="ToggleButton" textFill="WHITE" toggleColor="#9c1c48" toggleLineColor="#dad5d5" unToggleColor="#ea2a6c" unToggleLineColor="#dad5d5" />
+                     </children>
+                  </AnchorPane>
+               </children></HBox>
+            <AnchorPane prefHeight="644.0" prefWidth="1129.0">
+               <children>
+                  <AnchorPane layoutX="13.0" layoutY="17.0" prefHeight="90.0" prefWidth="261.0" style="-fx-background-color: #fff;">
+                     <effect>
+                        <DropShadow color="#e7e7e7" height="10.5" radius="4.75" width="10.5" />
+                     </effect>
+                     <children>
+                        <Label layoutX="90.0" layoutY="35.0" text="REVENUS" textFill="#4d4c4c">
+                           <font>
+                              <Font name="Century Gothic" size="16.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutY="86.0" prefHeight="4.0" prefWidth="263.0" style="-fx-background-color: #EA2A6C;" />
+                        <Label layoutX="22.0" layoutY="57.0" text="Des maisons vendues" textFill="#909090">
+                           <font>
+                              <Font name="Century Gothic" size="13.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="63.0" fitWidth="66.0" layoutX="183.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/icons8_Money_Bag_100px.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="revenus" alignment="CENTER_RIGHT" layoutX="11.0" layoutY="14.0" prefHeight="20.0" prefWidth="125.0" textFill="#4d4c4c">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="139.0" layoutY="18.0" text="fcfa" textFill="#4d4c4c">
+                           <font>
+                              <Font name="Century Gothic" size="10.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <GNCalendarTile layoutX="558.0" layoutY="17.0" prefHeight="342.0" prefWidth="544.0" style="-fx-border-color: #EA2A6C;">
+                     <effect>
+                        <DropShadow color="#e7e7e7" height="10.5" radius="4.75" width="10.5" />
+                     </effect>
+                  </GNCalendarTile>
+                  <AnchorPane layoutX="13.0" layoutY="368.0" prefHeight="136.0" prefWidth="537.0" style="-fx-background-color: #fff;">
+                     <effect>
+                        <DropShadow color="#e7e7e7" height="10.5" radius="4.75" width="10.5" />
+                     </effect>
+                     <children>
+                        <JFXButton ellipsisString="" layoutX="1.0" layoutY="1.0" onAction="#goMLibre" prefHeight="134.0" prefWidth="139.0" ripplerFill="#ea2a6c" text=".">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="147.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/icons8_Mortgage_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Label layoutX="159.0" layoutY="22.0" text="Maison libre" textFill="#4d4c4c">
+                           <font>
+                              <Font name="Century Gothic" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="159.0" layoutY="66.0" prefHeight="57.0" prefWidth="248.0" text="Merci de cliquer sur l'icone à gauche pour voir la liste des maisons qui ne sont pas encore vendues" textFill="#949393" wrapText="true" />
+                        <Label fx:id="MLibre" alignment="CENTER_RIGHT" layoutX="401.0" layoutY="8.0" prefHeight="118.0" prefWidth="118.0" textFill="#b2afaf">
+                           <font>
+                              <Font size="61.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="159.0" layoutY="58.0" prefHeight="3.0" prefWidth="93.0" style="-fx-background-color: #C2C2C2;" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="558.0" layoutY="367.0" prefHeight="138.0" prefWidth="268.0" style="-fx-background-color: #fff;">
+                     <effect>
+                        <DropShadow color="#e7e7e7" height="10.5" radius="4.75" width="10.5" />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="270.0" fitWidth="265.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/bg2.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="14.0" layoutY="54.0" text="CLIENTS" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="82.0" text="Dont nous disposons" textFill="#404040" wrapText="true">
+                           <font>
+                              <Font name="Century Gothic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="NombreClient" layoutX="15.0" layoutY="22.0" prefHeight="35.0" prefWidth="140.0" textFill="#f1f1f1">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXButton ellipsisString="" layoutX="173.0" layoutY="22.0" onAction="#goLocataire" prefHeight="32.0" prefWidth="82.0" ripplerFill="#3357aa" style="-fx-border-color: #fff;" text="Voir" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/icons8_Right_Button_100px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="14.0" layoutY="511.0" prefHeight="130.0" prefWidth="536.0" style="-fx-background-color: #fff;">
+                     <effect>
+                        <DropShadow color="#e7e7e7" height="10.5" radius="4.75" width="10.5" />
+                     </effect>
+                     <children>
+                        <JFXButton ellipsisString="" layoutX="1.0" layoutY="1.0" onAction="#goMOccupee" prefHeight="128.0" prefWidth="139.0" ripplerFill="#15d593" text=".">
+                           <graphic>
+                              <ImageView fitHeight="90.0" fitWidth="147.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/icons8_Home_Automation_100px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <Label layoutX="159.0" layoutY="22.0" text="Maison occupée" textFill="#4d4c4c">
+                           <font>
+                              <Font name="Century Gothic" size="27.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="159.0" layoutY="64.0" prefHeight="57.0" prefWidth="248.0" text="Merci de cliquer sur l'icone à gauche pour voir la liste des maisons qui sont déjà vendues" textFill="#949393" wrapText="true" />
+                        <Label fx:id="MOccupee" alignment="CENTER_RIGHT" layoutX="401.0" layoutY="8.0" prefHeight="118.0" prefWidth="118.0" textFill="#b2afaf">
+                           <font>
+                              <Font size="61.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="159.0" layoutY="62.0" prefHeight="3.0" prefWidth="93.0" style="-fx-background-color: #C2C2C2;" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="282.0" layoutY="17.0" prefHeight="90.0" prefWidth="269.0" style="-fx-background-color: #fff;">
+                     <effect>
+                        <DropShadow color="#e7e7e7" height="10.5" radius="4.75" width="10.5" />
+                     </effect>
+                     <children>
+                        <AnchorPane layoutY="86.0" prefHeight="4.0" prefWidth="269.0" style="-fx-background-color: #EA2A6C;" />
+                        <ImageView fitHeight="63.0" fitWidth="66.0" layoutX="191.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/icons8_Combo_Chart_100px.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="88.0" layoutY="37.0" text="NOMBRE" textFill="#4d4c4c">
+                           <font>
+                              <Font name="Century Gothic" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="45.0" layoutY="58.0" text="Total des maisons" textFill="#909090">
+                           <font>
+                              <Font name="Century Gothic" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nombre" alignment="CENTER_RIGHT" layoutX="30.0" layoutY="14.0" prefHeight="20.0" prefWidth="128.0" textFill="#4d4c4c">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="834.0" layoutY="368.0" prefHeight="273.0" prefWidth="268.0" style="-fx-background-color: #fff;">
+                     <effect>
+                        <DropShadow color="#e7e7e7" height="10.5" radius="4.75" width="10.5" />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="272.0" fitWidth="265.0" layoutX="2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/b2.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="14.0" layoutY="91.0" text="PARTENAIRES" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="34.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="134.0" text="Dont nous disposons" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="NombrePartenaire" layoutX="16.0" layoutY="22.0" prefHeight="69.0" prefWidth="140.0" textFill="#f1f1f1">
+                           <font>
+                              <Font size="47.0" />
+                           </font>
+                        </Label>
+                        <JFXButton ellipsisString="" layoutX="172.0" layoutY="36.0" onAction="#goBayeur" prefHeight="24.0" prefWidth="82.0" ripplerFill="#4b800e" style="-fx-border-color: #fff;" text="Voir" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/icons8_Right_Button_100px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="14.0" layoutY="112.0" prefHeight="248.0" prefWidth="536.0" style="-fx-background-color: #fff;">
+                     <effect>
+                        <DropShadow color="#e7e7e7" height="10.5" radius="4.75" width="10.5" />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="252.0" fitWidth="533.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/bgc.jpg" />
+                           </image>
+                        </ImageView>
+                        <JFXButton ellipsisString="" layoutX="332.0" layoutY="176.0" onAction="#goLoyer" prefHeight="41.0" prefWidth="135.0" ripplerFill="#d3d3d3" style="-fx-border-color: #A3D7FE; -fx-border-radius: 0;" text="Louer" textFill="#a3d7fe">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/icons8_Next_page_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="558.0" layoutY="510.0" prefHeight="132.0" prefWidth="268.0" style="-fx-background-color: #fff;">
+                     <effect>
+                        <DropShadow color="#e7e7e7" height="10.5" radius="4.75" width="10.5" />
+                     </effect>
+                     <children>
+                        <Label layoutX="14.0" layoutY="54.0" text="CLIENTS" textFill="#403f3f">
+                           <font>
+                              <Font name="Century Gothic Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="82.0" text="Ayant payés un mois donné" textFill="#404040" wrapText="true">
+                           <font>
+                              <Font name="Century Gothic" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="NombreFacture" layoutX="15.0" layoutY="22.0" prefHeight="35.0" prefWidth="140.0" textFill="#9e9e9e">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXButton ellipsisString="" layoutX="173.0" layoutY="22.0" onAction="#goClient" prefHeight="32.0" prefWidth="82.0" ripplerFill="#cdcbcb" style="-fx-border-color: #3f3f3f;" text="Voir" textFill="#3f3f3f">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../img/icons8_Right_Button_100px_2.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+         <BorderPane.margin>
+            <Insets left="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
